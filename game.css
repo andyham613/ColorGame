@@ -1,0 +1,171 @@
+/*.background    { background: rgb(52, 166, 251);
+                 table-layout: fixed;
+                 border-spacing: 0;   }*/
+
+
+:root {
+  /* :root is a clever way of saying "the outer-most element" */
+
+  --base: #A0A0A0; /* the default */
+  --vis: hidden;
+}
+
+
+.background    { background: #D3D3D3;
+                table-layout: fixed;
+                border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: #FFFFC0; opacity: .5}
+.wall          { background: #646464;   }
+
+.paint  {background: #000000; border-radius: 50%;} /* Black */
+.paint2 {background: #FFFFFF;} /* White */
+.paint3 {background: #00FFFF;} /* Cyan */ 
+.paint4 {background: #0000FF;} /* Blue */ 
+.paint5 {background: #FF00FF;} /* Magenta */
+.paint6 {background: #FF0000;} /* Red */
+.paint7 {background: #FFFF00;} /* Yellow */
+.paint8 {background: #00FF00;} /* Green */
+
+.door {
+  background: #000000;;
+  border-radius: 25%;
+}
+.door2 {background: #FFFFFF;} /* White */
+.door3 {background: #00FFFF;} /* Cyan */ 
+.door4 {background: #0000FF;} /* Blue */ 
+.door5 {background: #FF00FF;} /* Magenta */
+.door6 {background: #FF0000;} /* Red */
+.door7 {background: #FFFF00;} /* Yellow */
+.door8 {background: #00FF00;} /* Green */
+.door9 {background: #0098FF;} /* light blue */
+.door10 {background: #FF00A3;} /* Green */
+.door11 {background: #A100FF;} /* Green */
+
+.platform {background: #000000;}
+.platform2 {background: #FFFFFF;} /* White */
+.platform3 {background: #00FFFF;} /* Cyan */ 
+.platform4 {background: #0000FF;} /* Blue */ 
+.platform5 {background: #FF00FF;} /* Magenta */
+.platform6 {background: #FF0000;} /* Red */
+.platform7 {background: #FFFF00;} /* Yellow */
+.platform8 {background: #00FF00;} /* Green */
+.platform9 {background: #ADFF00;} /* seafoam green */
+.platform10 {background: #FF6F00;} /* orange */
+.platform11 {background: #00FFB1;} /* Green */
+
+.actor  { position: absolute;  }
+.coin   { background: rgb(241, 229, 89); border-radius: 50%;}
+
+.player {
+  background: var(--base);
+  /*border-radius: 25%;*/
+ }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.button {
+    background-color: #000000; /* Black */
+    border: 2px solid #646464;
+    color: #ffffff;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 75px;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: 0 5px #646464;
+}
+
+.button2 {background-color: #FFFFFF; color: #000000; border-radius: 50%;} /* White */
+.button3 {background-color: #00FFFF; color: #000000; border-radius: 50%;} /* Cyan */ 
+.button4 {background-color: #0000FF; border-radius: 50%;} /* Blue */ 
+.button5 {background-color: #FF00FF; color: #000000; border-radius: 50%;} /* Magenta */
+.button6 {background-color: #FF0000; border-radius: 50%;} /* Red */
+.button7 {background-color: #FFFF00; color: #000000; border-radius: 50%;} /* Yellow */
+.button8 {background-color: #00FF00; color: #000000; border-radius: 50%;} /* Green */
+
+.button:active {
+  box-shadow: 0 1px #909090;
+  transform: translateY(4px);
+}
+
+.input {
+margin-bottom: 20px;
+}
+
+.input:hover {
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.textstuff {
+position: fixed;
+top: 540px;
+left: 31px;
+color: #000000;
+font: Garamond;
+font-size: 15px;
+font-weight: 400;
+width: 600px;
+}
+
+.scorestuff {
+position: fixed;
+top: 40px;
+left: 530px;
+color: #000000;
+font: Garamond;
+font-size: 25px;
+font-weight: 400;
+width: 600px;
+}
+
+.winstuff {
+position: fixed;
+top: 300px;
+left: 300px;
+color: #000000;
+font: Garamond;
+font-size: 25px;
+font-weight: 400;
+width: 600px;
+}
+
+.container {
+    position: absolute;
+    left: 30px;
+    top: 8px;
+}
+
+.input {
+    position: absolute;
+    left: 29px;
+    top: 29px;
+    width: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+.lost .player {
+  opacity: .3;
+}
+
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
