@@ -3,10 +3,10 @@
 2D scroller platform game designed to teach players about basic color theory.
 
 Control the character with arrow keys and use the mouse to switch colors.
-..* Vertical Walls (or Doors) can be passed through if the character is the **same** color as the wall.
-..* Horizontal Platforms can be stood upon if the character is the **complement** color of the platform.
+* Vertical Walls (or Doors) can be passed through if the character is the **same** color as the wall.
+* Horizontal Platforms can be stood upon if the character is the **complement** color of the platform.
 
-###Levels
+### Levels
 1. Tutorial Level: Only black and white colors are available to introduce idea of complements.
 2. Primary: The 3 primary colors are introduced, Cyan, Magenta, Yellow, and their complements/secondary colors.
 3. Color wheel: Any hue can be selected from the color wheel, and a scoring system is implemented as well. The closer the color match, the higher the points.
